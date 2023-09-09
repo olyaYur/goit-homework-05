@@ -489,11 +489,7 @@ margin-bottom: 16px;
 */
 
 
-.backdrop.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-} 
+
 
 
 /*modal-window*/
@@ -501,7 +497,7 @@ margin-bottom: 16px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -514,6 +510,14 @@ margin-bottom: 16px;
     
     padding: 72px 24px 24px 24px; 
 }
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+} 
+
   /*
 Всередині контейнера для модального вікна зберігається div, що являється модальним вікном
 Модальне вікно має класи, які містять мінімум 3 символи, всі літери латиницею, всі літери маленькі, та може містити дефіс чи нижнє підкреслення
