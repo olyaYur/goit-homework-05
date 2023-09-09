@@ -502,6 +502,7 @@ margin-bottom: 16px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     width: 408px;
@@ -796,7 +797,7 @@ label має текстовий контент Comment
 Для textarea в класі заданий стиль transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); що дозволяє задавати анімаційний ефект для зміни значень властивостей стилю
 При фокусі на textarea, в класі заданий стиль border-color: #4D5AE5; для зміни кольору рамки при кліку на input
 */
-*/
+
 .review-form-field-comment-textarea:focus {
     border-color: #4D5AE5;
 }
